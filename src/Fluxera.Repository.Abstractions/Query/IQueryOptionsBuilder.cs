@@ -23,7 +23,7 @@ namespace Fluxera.Repository.Query
 		/// </summary>
 		/// <param name="sortExpression"></param>
 		/// <returns></returns>
-		ISortingOptions<T> OrderByDescending(Expression<Func<T, object>> sortExpression);
+		ISortingOptions<T> OrderByDescending<TValue>(Expression<Func<T, TValue>> sortExpression);
 
 		/// <summary>
 		///     Creates an entry point for configuring the skip/take options.

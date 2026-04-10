@@ -44,20 +44,19 @@
 		[Test]
 		public async Task ShouldFindByStronglyTypedID()
 		{
-			Person linqFilterResult = await collection
+			Person linqFilterResult = await this.collection
 				.AsQueryable()
 				.Where(x => x.Id == PersonId.Create("fcd5f4f9753a4284a2d0f500b9b23cf8"))
 				.FirstOrDefaultAsync();
 			linqFilterResult.Should().NotBeNull();
 		}
 
-		[Ignore("Fix this later")]
 		[Test]
 		public async Task ShouldFindByValue()
 		{
 			Person linqFilterResult = await this.collection
 				.AsQueryable()
-				.Where(x => x.Id == "6669b52802357c9886f6d24f")
+				.Where(x => x.Id == "fcd5f4f9753a4284a2d0f500b9b23cf8")
 				.FirstOrDefaultAsync();
 
 			linqFilterResult.Should().NotBeNull();

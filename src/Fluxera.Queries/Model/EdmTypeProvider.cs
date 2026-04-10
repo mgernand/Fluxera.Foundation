@@ -92,13 +92,13 @@
 			// Handle strongly-typed IDs.
 			if(clrType.IsStronglyTypedId())
 			{
-				return CreateStronglyTypedIdType(clrType, visitedTypes);
+				return this.CreateStronglyTypedIdType(clrType, visitedTypes);
 			}
 
 			// Handle primitive value objects.
 			if(clrType.IsPrimitiveValueObject())
 			{
-				return CreatePrimitiveValueObjectType(clrType, visitedTypes);
+				return this.CreatePrimitiveValueObjectType(clrType, visitedTypes);
 			}
 
 			// Handle enumerables.

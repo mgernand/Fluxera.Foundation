@@ -15,7 +15,9 @@
     <Project Path="samples/Repository/Sample.LiteDB/Sample.LiteDB.csproj" />
     <Project Path="samples/Repository/Sample.MongoDB/Sample.MongoDB.csproj" />
   </Folder>
-  <Folder Name="/src/" />
+  <Folder Name="/src/">
+    <File Path="src/Directory.Build.props" />
+  </Folder>
   <Folder Name="/src/DomainEvents/">
     <Project Path="src/Fluxera.DomainEvents.Abstractions/Fluxera.DomainEvents.Abstractions.csproj" />
     <Project Path="src/Fluxera.DomainEvents/Fluxera.DomainEvents.csproj" />
@@ -88,7 +90,9 @@
     <Project Path="src/Fluxera.ValueObject.SystemTextJson/Fluxera.ValueObject.SystemTextJson.csproj" />
     <Project Path="src/Fluxera.ValueObject/Fluxera.ValueObject.csproj" />
   </Folder>
-  <Folder Name="/tests/" />
+  <Folder Name="/tests/">
+    <File Path="tests/Directory.Build.props" />
+  </Folder>
   <Folder Name="/tests/DomainEvents/">
     <Project Path="tests/Fluxera.DomainEvents.UnitTests/Fluxera.DomainEvents.UnitTests.csproj" />
   </Folder>

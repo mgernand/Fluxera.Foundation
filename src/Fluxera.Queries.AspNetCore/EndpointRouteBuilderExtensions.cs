@@ -120,7 +120,7 @@
 				.WithMetadata(options)
 				.WithMetadata(entitySetOptions)
 				.WithDescription("Retrieves multiple entities by the filter predicate.")
-				.WithOpenApi()
+				//.WithOpenApi()
 				.Produces(200, entitySetOptions.ComplexTypeOptions.ClrType);
 
 			return routeHandlerBuilder;
@@ -152,7 +152,7 @@
 				.WithMetadata(options)
 				.WithMetadata(entitySetOptions)
 				.WithDescription("Retrieves a single entity by ID.")
-				.WithOpenApi()
+				//.WithOpenApi()
 				.Produces(200, entitySetOptions.ComplexTypeOptions.ClrType)
 				.Produces(404);
 
@@ -201,7 +201,7 @@
 				.WithMetadata(options)
 				.WithMetadata(entitySetOptions)
 				.WithDescription("Retrieves the count of entities in the data store.")
-				.WithOpenApi()
+				//.WithOpenApi()
 				.Produces<long>(contentType: "text/plain");
 
 			return routeHandlerBuilder;

@@ -192,7 +192,7 @@
 					bool isDomainSignatureAttribute = property.IsDefined(typeof(DomainSignatureAttribute), true);
 					if(isDomainSignatureAttribute)
 					{
-						if(property.Name is nameof(this.ID) or nameof(DomainEvents) or nameof(this.IsTransient))
+						if(property.Name is nameof(this.ID) or nameof(this.DomainEvents) or nameof(this.IsTransient))
 						{
 							throw new InvalidOperationException($"The property {property.Name} can't belong to the domain signature.");
 						}

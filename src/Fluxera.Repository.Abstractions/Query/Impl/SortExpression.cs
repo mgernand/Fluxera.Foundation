@@ -5,6 +5,7 @@ namespace Fluxera.Repository.Query.Impl
 	using System.Linq.Expressions;
 	using Fluxera.Utilities.Extensions;
 	using JetBrains.Annotations;
+	using Expr = System.Linq.Expressions.Expression;
 
 	/// <summary>
 	///     A container hold information about the sort expression and direction.
@@ -31,7 +32,22 @@ namespace Fluxera.Repository.Query.Impl
 		public Expression<Func<T, TValue>> Expression { get; }
 
 		/// <inheritdoc />
-		public LambdaExpression LambdaExpression => this.Expression;
+		public LambdaExpression LambdaExpression
+		{
+			get
+			{
+				// If TValue is already a reference type, we can leave the expression as is.
+				// If TValue is a value type (int, enum, etc.), we must explicitly convert it to object (boxing).
+				if (typeof(TValue).IsValueType)
+				{
+					// Produces: x => (object)x.Property
+					UnaryExpression boxedBody = Expr.Convert(this.Expression.Body, typeof(object));
+					return Expr.Lambda<Func<T, object>>(boxedBody, this.Expression.Parameters);
+				}
+
+				return this.Expression;
+			}
+		}
 
 		/// <summary>
 		///     Flag, if the sort order is descending.

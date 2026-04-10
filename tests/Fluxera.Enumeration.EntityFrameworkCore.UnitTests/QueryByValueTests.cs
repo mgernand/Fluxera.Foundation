@@ -34,7 +34,6 @@
 			this.context?.Dispose();
 		}
 
-		[Ignore("Fix this later. Drop .NET 7 in november?")]
 		[Test]
 		public async Task ShouldFindByValue()
 		{

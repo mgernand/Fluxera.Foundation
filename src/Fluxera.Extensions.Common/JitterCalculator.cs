@@ -39,7 +39,7 @@
 				"The percentage should be larger than 0 and smaller than 100.");
 
 			int milliseconds = (int)input.TotalMilliseconds;
-			milliseconds = Apply(milliseconds, percentage);
+			milliseconds = this.Apply(milliseconds, percentage);
 			return TimeSpan.FromMilliseconds(milliseconds);
 		}
 	}

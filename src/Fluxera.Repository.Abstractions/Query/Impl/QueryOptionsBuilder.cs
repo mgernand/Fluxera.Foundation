@@ -55,7 +55,7 @@ namespace Fluxera.Repository.Query.Impl
 		/// </summary>
 		/// <param name="sortExpression"></param>
 		/// <returns></returns>
-		public ISortingOptions<T> OrderByDescending(Expression<Func<T, object>> sortExpression)
+		public ISortingOptions<T> OrderByDescending<TValue>(Expression<Func<T, TValue>> sortExpression)
 		{
 			this.queryOptions ??= new QueryOptionsImpl<T>();
 			return this.queryOptions.OrderByDescending(sortExpression);
