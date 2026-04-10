@@ -29,6 +29,7 @@ x86/
 [Aa][Rr][Mm]64/
 [Aa][Rr][Mm]64[Ee][Cc]/
 bld/
+[Bb]in/
 [Oo]bj/
 [Oo]ut/
 [Ll]og/
@@ -416,3 +417,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# JetBrains
+.idea/

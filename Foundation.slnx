@@ -1,0 +1,155 @@
+<Solution>
+  <Folder Name="/.items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/samples/" />
+  <Folder Name="/samples/Queries/">
+    <Project Path="samples/Queries/SampleApp/SampleApp.csproj" />
+  </Folder>
+  <Folder Name="/samples/Repository/">
+    <Project Path="samples/Repository/Sample.API/Sample.API.csproj" />
+    <Project Path="samples/Repository/Sample.Domain/Sample.Domain.csproj" />
+    <Project Path="samples/Repository/Sample.EntityFrameworkCore/Sample.EntityFrameworkCore.csproj" />
+    <Project Path="samples/Repository/Sample.InMemory/Sample.InMemory.csproj" />
+    <Project Path="samples/Repository/Sample.LiteDB/Sample.LiteDB.csproj" />
+    <Project Path="samples/Repository/Sample.MongoDB/Sample.MongoDB.csproj" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/DomainEvents/">
+    <Project Path="src/Fluxera.DomainEvents.Abstractions/Fluxera.DomainEvents.Abstractions.csproj" />
+    <Project Path="src/Fluxera.DomainEvents/Fluxera.DomainEvents.csproj" />
+  </Folder>
+  <Folder Name="/src/Entity/">
+    <Project Path="src/Fluxera.Entity/Fluxera.Entity.csproj" />
+  </Folder>
+  <Folder Name="/src/Enumeration/">
+    <Project Path="src/Fluxera.Enumeration.EntityFrameworkCore/Fluxera.Enumeration.EntityFrameworkCore.csproj" />
+    <Project Path="src/Fluxera.Enumeration.JsonNet/Fluxera.Enumeration.JsonNet.csproj" />
+    <Project Path="src/Fluxera.Enumeration.LiteDB/Fluxera.Enumeration.LiteDB.csproj" />
+    <Project Path="src/Fluxera.Enumeration.MongoDB/Fluxera.Enumeration.MongoDB.csproj" />
+    <Project Path="src/Fluxera.Enumeration.SystemTextJson/Fluxera.Enumeration.SystemTextJson.csproj" />
+    <Project Path="src/Fluxera.Enumeration/Fluxera.Enumeration.csproj" />
+  </Folder>
+  <Folder Name="/src/Extensions/">
+    <Project Path="src/Fluxera.Extensions.Caching.Abstractions/Fluxera.Extensions.Caching.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.Caching/Fluxera.Extensions.Caching.csproj" />
+    <Project Path="src/Fluxera.Extensions.Common.Abstractions/Fluxera.Extensions.Common.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.Common/Fluxera.Extensions.Common.csproj" />
+    <Project Path="src/Fluxera.Extensions.DataManagement.Abstractions/Fluxera.Extensions.DataManagement.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.DataManagement/Fluxera.Extensions.DataManagement.csproj" />
+    <Project Path="src/Fluxera.Extensions.DependencyInjection.Abstractions/Fluxera.Extensions.DependencyInjection.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.DependencyInjection/Fluxera.Extensions.DependencyInjection.csproj" />
+    <Project Path="src/Fluxera.Extensions.Http.Abstractions/Fluxera.Extensions.Http.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.Http/Fluxera.Extensions.Http.csproj" />
+    <Project Path="src/Fluxera.Extensions.Localization.Abstractions/Fluxera.Extensions.Localization.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.Localization/Fluxera.Extensions.Localization.csproj" />
+    <Project Path="src/Fluxera.Extensions.Validation.Abstractions/Fluxera.Extensions.Validation.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Extensions.Validation/Fluxera.Extensions.Validation.csproj" />
+  </Folder>
+  <Folder Name="/src/Queries/">
+    <Project Path="src/Fluxera.Queries.AspNetCore/Fluxera.Queries.AspNetCore.csproj" />
+    <Project Path="src/Fluxera.Queries/Fluxera.Queries.csproj" />
+  </Folder>
+  <Folder Name="/src/Repository/">
+    <Project Path="src/Fluxera.Repository.Abstractions/Fluxera.Repository.Abstractions.csproj" />
+    <Project Path="src/Fluxera.Repository.EntityFrameworkCore/Fluxera.Repository.EntityFrameworkCore.csproj" />
+    <Project Path="src/Fluxera.Repository.InMemory/Fluxera.Repository.InMemory.csproj" />
+    <Project Path="src/Fluxera.Repository.LiteDB/Fluxera.Repository.LiteDB.csproj" />
+    <Project Path="src/Fluxera.Repository.MongoDB/Fluxera.Repository.MongoDB.csproj" />
+    <Project Path="src/Fluxera.Repository.OpenTelemetry/Fluxera.Repository.OpenTelemetry.csproj" />
+    <Project Path="src/Fluxera.Repository.Queries/Fluxera.Repository.Queries.csproj" />
+    <Project Path="src/Fluxera.Repository/Fluxera.Repository.csproj" />
+  </Folder>
+  <Folder Name="/src/Results/">
+    <Project Path="src/Fluxera.Results.AspNetCore/Fluxera.Results.AspNetCore.csproj" />
+    <Project Path="src/Fluxera.Results.FluentAssertions/Fluxera.Results.FluentAssertions.csproj" />
+    <Project Path="src/Fluxera.Results/Fluxera.Results.csproj" />
+  </Folder>
+  <Folder Name="/src/StronglyTypedId/">
+    <Project Path="src/Fluxera.StronglyTypedId.EntityFrameworkCore/Fluxera.StronglyTypedId.EntityFrameworkCore.csproj" />
+    <Project Path="src/Fluxera.StronglyTypedId.JsonNet/Fluxera.StronglyTypedId.JsonNet.csproj" />
+    <Project Path="src/Fluxera.StronglyTypedId.LiteDB/Fluxera.StronglyTypedId.LiteDB.csproj" />
+    <Project Path="src/Fluxera.StronglyTypedId.MongoDB/Fluxera.StronglyTypedId.MongoDB.csproj" />
+    <Project Path="src/Fluxera.StronglyTypedId.SystemTextJson/Fluxera.StronglyTypedId.SystemTextJson.csproj" />
+    <Project Path="src/Fluxera.StronglyTypedId/Fluxera.StronglyTypedId.csproj" />
+  </Folder>
+  <Folder Name="/src/Utilities/">
+    <Project Path="src/Fluxera.ComponentModel.Annotations/Fluxera.ComponentModel.Annotations.csproj" />
+    <Project Path="src/Fluxera.Guards/Fluxera.Guards.csproj" />
+    <Project Path="src/Fluxera.Linq.Expressions/Fluxera.Linq.Expressions.csproj" />
+    <Project Path="src/Fluxera.Utilities/Fluxera.Utilities.csproj" />
+  </Folder>
+  <Folder Name="/src/ValueObject/">
+    <Project Path="src/Fluxera.ValueObject.EntityFrameworkCore/Fluxera.ValueObject.EntityFrameworkCore.csproj" />
+    <Project Path="src/Fluxera.ValueObject.JsonNet/Fluxera.ValueObject.JsonNet.csproj" />
+    <Project Path="src/Fluxera.ValueObject.LiteDB/Fluxera.ValueObject.LiteDB.csproj" />
+    <Project Path="src/Fluxera.ValueObject.MongoDB/Fluxera.ValueObject.MongoDB.csproj" />
+    <Project Path="src/Fluxera.ValueObject.SystemTextJson/Fluxera.ValueObject.SystemTextJson.csproj" />
+    <Project Path="src/Fluxera.ValueObject/Fluxera.ValueObject.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/DomainEvents/">
+    <Project Path="tests/Fluxera.DomainEvents.UnitTests/Fluxera.DomainEvents.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Entity/">
+    <Project Path="tests/Fluxera.Entity.UnitTests/Fluxera.Entity.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Enumeration/">
+    <Project Path="tests/Fluxera.Enumeration.EntityFrameworkCore.UnitTests/Fluxera.Enumeration.EntityFrameworkCore.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.JsonNet.UnitTests/Fluxera.Enumeration.JsonNet.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.LiteDB.UnitTests/Fluxera.Enumeration.LiteDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.MongoDB.UnitTests/Fluxera.Enumeration.MongoDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.SystemTextJson.UnitTests/Fluxera.Enumeration.SystemTextJson.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.UnitTests.Enums/Fluxera.Enumeration.UnitTests.Enums.csproj" />
+    <Project Path="tests/Fluxera.Enumeration.UnitTests/Fluxera.Enumeration.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Extensions/">
+    <Project Path="tests/Fluxera.Extensions.Caching.UnitTesting/Fluxera.Extensions.Caching.UnitTesting.csproj" />
+    <Project Path="tests/Fluxera.Extensions.Common.UnitTests/Fluxera.Extensions.Common.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.DataManagement.UnitTests/Fluxera.Extensions.DataManagement.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.DependencyInjection.UnitTests/Fluxera.Extensions.DependencyInjection.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.Http.UnitTests/Fluxera.Extensions.Http.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.Localization.UnitTests/Fluxera.Extensions.Localization.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.Validation.UnitTests/Fluxera.Extensions.Validation.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Queries/">
+    <Project Path="tests/Fluxera.Queries.AspNetCore.UnitTests/Fluxera.Queries.AspNetCore.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Queries.UnitTests/Fluxera.Queries.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Repository/">
+    <Project Path="tests/Fluxera.Repository.EntityFrameworkCore.IntegrationTests/Fluxera.Repository.EntityFrameworkCore.IntegrationTests.csproj" />
+    <Project Path="tests/Fluxera.Repository.InMemory.IntegrationTests/Fluxera.Repository.InMemory.IntegrationTests.csproj" />
+    <Project Path="tests/Fluxera.Repository.LiteDB.IntegrationTests/Fluxera.Repository.LiteDB.IntegrationTests.csproj" />
+    <Project Path="tests/Fluxera.Repository.MongoDB.IntegrationTests/Fluxera.Repository.MongoDB.IntegrationTests.csproj" />
+    <Project Path="tests/Fluxera.Repository.UnitTests.Core/Fluxera.Repository.UnitTests.Core.csproj" />
+    <Project Path="tests/Fluxera.Repository.UnitTests/Fluxera.Repository.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Results/">
+    <Project Path="tests/Fluxera.Results.AspNetCore.UnitTests/Fluxera.Results.AspNetCore.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Results.FluentAssertions.UnitTests/Fluxera.Results.FluentAssertions.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Results.UnitTest/Fluxera.Results.UnitTest.csproj" />
+  </Folder>
+  <Folder Name="/tests/StronglyTypedId/">
+    <Project Path="tests/Fluxera.StronglyTypedId.EntityFrameworkCore.UnitTests/Fluxera.StronglyTypedId.EntityFrameworkCore.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.StronglyTypedId.JsonNet.UnitTests/Fluxera.StronglyTypedId.JsonNet.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.StronglyTypedId.LiteDB.UnitTests/Fluxera.StronglyTypedId.LiteDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.StronglyTypedId.MongoDB.UnitTests/Fluxera.StronglyTypedId.MongoDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.StronglyTypedId.SystemTextJson.UnitTests/Fluxera.StronglyTypedId.SystemTextJson.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.StronglyTypedId.UnitTests/Fluxera.StronglyTypedId.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/Utilities/">
+    <Project Path="tests/Fluxera.ComponentModel.Annotations.UnitTests/Fluxera.ComponentModel.Annotations.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Guards.UnitTests/Fluxera.Guards.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Linq.Expressions.UnitTests/Fluxera.Linq.Expressions.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Utilities.UnitTests/Fluxera.Utilities.UnitTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/ValueObject/">
+    <Project Path="tests/Fluxera.ValueObject.EntityFrameworkCore.UnitTests/Fluxera.ValueObject.EntityFrameworkCore.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.ValueObject.JsonNet.UnitTests/Fluxera.ValueObject.JsonNet.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.ValueObject.LiteDB.UnitTests/Fluxera.ValueObject.LiteDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.ValueObject.MongoDB.UnitTests/Fluxera.ValueObject.MongoDB.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.ValueObject.SystemTextJson.UnitTests/Fluxera.ValueObject.SystemTextJson.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.ValueObject.UnitTests/Fluxera.ValueObject.UnitTests.csproj" />
+  </Folder>
+</Solution>

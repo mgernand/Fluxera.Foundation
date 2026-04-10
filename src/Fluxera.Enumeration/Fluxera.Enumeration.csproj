@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Fluxera.Enumeration</Title>
+		<Description>An object-oriented enumeration library.</Description>
+		<PackageTags>fluxera;library;enumeration</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Link="Properties\README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\icon.png" Link="Properties\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Fluxera.Enumeration.EntityFrameworkCore" />
+		<InternalsVisibleTo Include="Fluxera.Enumeration.JsonNet" />
+		<InternalsVisibleTo Include="Fluxera.Enumeration.LiteDB" />
+		<InternalsVisibleTo Include="Fluxera.Enumeration.MongoDB" />
+		<InternalsVisibleTo Include="Fluxera.Enumeration.SystemTextJson" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Fluxera.Guards\Fluxera.Guards.csproj" />
+	</ItemGroup>
+
+</Project>
