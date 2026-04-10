@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Fluxera.StronglyTypedId</Title>
+		<Description>A strongly-typed ID implementation.</Description>
+		<PackageTags>fluxera;library;ddd;strongly-typed;identifier;id</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Link="Properties\README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\icon.png" Link="Properties\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Fluxera.StronglyTypedId.EntityFrameworkCore" />
+		<InternalsVisibleTo Include="Fluxera.StronglyTypedId.JsonNet" />
+		<InternalsVisibleTo Include="Fluxera.StronglyTypedId.LiteDB" />
+		<InternalsVisibleTo Include="Fluxera.StronglyTypedId.MongoDB" />
+		<InternalsVisibleTo Include="Fluxera.StronglyTypedId.SystemTextJson" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Fluxera.Guards\Fluxera.Guards.csproj" />
+	</ItemGroup>
+
+</Project>

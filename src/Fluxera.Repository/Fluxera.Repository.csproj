@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Fluxera.Repository</Title>
+		<Description>A generic repository implementation.</Description>
+		<PackageTags>fluxera;library;extensions;repository</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Link="Properties\README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\icon.png" Link="Properties\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Fluxera.Repository.UnitTests" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Fluxera.ComponentModel.Annotations\Fluxera.ComponentModel.Annotations.csproj" />
+		<ProjectReference Include="..\Fluxera.DomainEvents\Fluxera.DomainEvents.csproj" />
+		<ProjectReference Include="..\Fluxera.Entity\Fluxera.Entity.csproj" />
+		<ProjectReference Include="..\Fluxera.Enumeration\Fluxera.Enumeration.csproj" />
+		<ProjectReference Include="..\Fluxera.Extensions.Caching\Fluxera.Extensions.Caching.csproj" />
+		<ProjectReference Include="..\Fluxera.Extensions.Common\Fluxera.Extensions.Common.csproj" />
+		<ProjectReference Include="..\Fluxera.Extensions.DependencyInjection\Fluxera.Extensions.DependencyInjection.csproj" />
+		<ProjectReference Include="..\Fluxera.Extensions.Validation\Fluxera.Extensions.Validation.csproj" />
+		<ProjectReference Include="..\Fluxera.Guards\Fluxera.Guards.csproj" />
+		<ProjectReference Include="..\Fluxera.Repository.Abstractions\Fluxera.Repository.Abstractions.csproj" />
+		<ProjectReference Include="..\Fluxera.StronglyTypedId\Fluxera.StronglyTypedId.csproj" />
+		<ProjectReference Include="..\Fluxera.ValueObject\Fluxera.ValueObject.csproj" />
+	</ItemGroup>
+
+</Project>

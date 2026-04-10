@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<OpenApiGenerateDocumentsOnBuild>false</OpenApiGenerateDocumentsOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Fluxera.Queries.AspNetCore</Title>
+		<Description>An OData v4 query parser and runtime for ASP.NET Core controllers and minimal APIs.</Description>
+		<PackageTags>fluxera;library;queries;odata;aspnet</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Link="Properties\README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\icon.png" Link="Properties\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="[8.0.18]" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Fluxera.Enumeration.SystemTextJson\Fluxera.Enumeration.SystemTextJson.csproj" />
+	  <ProjectReference Include="..\Fluxera.Queries\Fluxera.Queries.csproj" />
+	  <ProjectReference Include="..\Fluxera.StronglyTypedId.SystemTextJson\Fluxera.StronglyTypedId.SystemTextJson.csproj" />
+	  <ProjectReference Include="..\Fluxera.ValueObject.SystemTextJson\Fluxera.ValueObject.SystemTextJson.csproj" />
+	</ItemGroup>
+
+</Project>

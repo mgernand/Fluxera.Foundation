@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentAssertions" Version="8.9.0" />
+		<PackageReference Include="Fluxera.Entity" Version="9.2.0" />
+		<PackageReference Include="Fluxera.Enumeration" Version="9.2.0" />
+		<PackageReference Include="Fluxera.StronglyTypedId" Version="9.2.0" />
+		<PackageReference Include="Fluxera.ValueObject" Version="9.2.0" />
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+		<PackageReference Include="MadEyeMatt.AspNetCore.Endpoints" Version="9.0.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
+		<PackageReference Include="NUnit" Version="4.5.1" />
+		<PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+		<PackageReference Include="NUnit.Analyzers" Version="4.12.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="coverlet.collector" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="[8.0.18]" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="[8.0.18]" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Fluxera.Queries.AspNetCore\Fluxera.Queries.AspNetCore.csproj" />
+	</ItemGroup>
+
+</Project>

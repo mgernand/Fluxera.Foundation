@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Title>Fluxera.Queries</Title>
+		<Description>An OData v4 query parser and runtime for ASP.NET Core controllers and minimal APIs.</Description>
+		<PackageTags>fluxera;library;queries;odata;aspnet</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Link="Properties\README.md">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\icon.png" Link="Properties\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="Fluxera.Queries.AspNetCore" />
+		<InternalsVisibleTo Include="Fluxera.Queries.UnitTests" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Fluxera.Enumeration\Fluxera.Enumeration.csproj" />
+	  <ProjectReference Include="..\Fluxera.Guards\Fluxera.Guards.csproj" />
+	  <ProjectReference Include="..\Fluxera.StronglyTypedId\Fluxera.StronglyTypedId.csproj" />
+	  <ProjectReference Include="..\Fluxera.Utilities\Fluxera.Utilities.csproj" />
+	  <ProjectReference Include="..\Fluxera.ValueObject\Fluxera.ValueObject.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Parsers\Messages.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Messages.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Parsers\Messages.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Messages.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>

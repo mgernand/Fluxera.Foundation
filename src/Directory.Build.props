@@ -1,0 +1,35 @@
+<Project>
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(CurrentYear)' == ''">
+		<CurrentYear>$([System.DateTime]::UtcNow.Year)</CurrentYear>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Company>Fluxera Software Development GmbH</Company>
+		<Product>Fluxera Software Foundation</Product>
+		<Copyright>Copyright © 2014-$(CurrentYear) Fluxera Software Development GmbH. All rights reserved.</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>Matthias Gernand</Authors>
+		<RepositoryUrl>https://github.com/mgernand/Fluxera.Foundation</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/mgernand/Fluxera.Foundation</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<IncludeSymbols>false</IncludeSymbols>
+		<NeutralLanguage>en</NeutralLanguage>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+</Project>
