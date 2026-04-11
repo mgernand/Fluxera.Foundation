@@ -83,6 +83,7 @@
     <Project Path="src/Fluxera.ComponentModel.Annotations/Fluxera.ComponentModel.Annotations.csproj" />
     <Project Path="src/Fluxera.Guards/Fluxera.Guards.csproj" />
     <Project Path="src/Fluxera.Linq.Expressions/Fluxera.Linq.Expressions.csproj" />
+    <Project Path="src/Fluxera.LiteDB.Queryable/Fluxera.LiteDB.Queryable.csproj" />
     <Project Path="src/Fluxera.Utilities/Fluxera.Utilities.csproj" />
   </Folder>
   <Folder Name="/src/ValueObject/">
@@ -152,6 +153,7 @@
     <Project Path="tests/Fluxera.ComponentModel.Annotations.UnitTests/Fluxera.ComponentModel.Annotations.UnitTests.csproj" />
     <Project Path="tests/Fluxera.Guards.UnitTests/Fluxera.Guards.UnitTests.csproj" />
     <Project Path="tests/Fluxera.Linq.Expressions.UnitTests/Fluxera.Linq.Expressions.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.LiteDB.Queryable.UnitTests/Fluxera.LiteDB.Queryable.UnitTests.csproj" />
     <Project Path="tests/Fluxera.Utilities.UnitTests/Fluxera.Utilities.UnitTests.csproj" />
   </Folder>
   <Folder Name="/tests/ValueObject/">
