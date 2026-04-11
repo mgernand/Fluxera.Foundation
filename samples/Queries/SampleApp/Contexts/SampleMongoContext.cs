@@ -1,8 +1,8 @@
 ﻿namespace SampleApp.Contexts
 {
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Utilities.Extensions;
 	using JetBrains.Annotations;
-	using MadEyeMatt.MongoDB.DbContext;
 
 	[UsedImplicitly]
 	internal sealed class SampleMongoContext : MongoDbContext

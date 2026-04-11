@@ -2,7 +2,7 @@
 {
 	using System;
 	using System.Threading.Tasks;
-	using MadEyeMatt.MongoDB.DbContext;
+	using Fluxera.MongoDB.DbContext;
 	using Microsoft.Extensions.DependencyInjection;
 	using MongoDB.Driver;
 

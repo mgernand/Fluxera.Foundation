@@ -1,7 +1,5 @@
-﻿namespace MongoDB.DbContext.UnitTests
+﻿namespace Fluxera.MongoDB.DbContext.UnitTests
 {
-	using MadEyeMatt.MongoDB.DbContext;
-
 	public sealed class CustomMongoDbContext : MongoDbContext
 	{
 		/// <inheritdoc />

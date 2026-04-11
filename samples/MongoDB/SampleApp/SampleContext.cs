@@ -1,7 +1,7 @@
 ﻿namespace SampleApp
 {
+	using Fluxera.MongoDB.DbContext;
 	using JetBrains.Annotations;
-	using MadEyeMatt.MongoDB.DbContext;
 	using MongoDB.Driver;
 
 	[PublicAPI]

@@ -1,7 +1,7 @@
 ﻿namespace Sample.MongoDB
 {
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Utilities.Extensions;
-	using MadEyeMatt.MongoDB.DbContext;
 
 	public class SampleMongoDbContext : MongoDbContext
 	{

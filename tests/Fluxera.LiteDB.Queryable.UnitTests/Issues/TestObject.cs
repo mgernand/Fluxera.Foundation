@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Queryable.UnitTests.Issues
+﻿namespace Fluxera.LiteDB.Queryable.UnitTests.Issues
 {
 	public class TestObject
 	{

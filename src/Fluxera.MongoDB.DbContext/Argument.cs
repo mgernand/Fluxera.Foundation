@@ -1,7 +1,7 @@
 ﻿// ReSharper disable MemberCanBePrivate.Global
 #pragma warning disable CS1591
 
-namespace MadEyeMatt.MongoDB.DbContext
+namespace Fluxera.MongoDB.DbContext
 {
 	using System;
 	using System.Runtime.CompilerServices;

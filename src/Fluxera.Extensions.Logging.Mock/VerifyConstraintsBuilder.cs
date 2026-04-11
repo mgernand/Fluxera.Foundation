@@ -1,6 +1,7 @@
-﻿namespace Microsoft.Extensions.Logging.Mock
+﻿namespace Fluxera.Extensions.Logging.Mock
 {
 	using System;
+	using Microsoft.Extensions.Logging;
 	using Moq;
 
 	internal sealed class VerifyConstraintsBuilder<T> : IVerifyConstraintsBuilder<T>

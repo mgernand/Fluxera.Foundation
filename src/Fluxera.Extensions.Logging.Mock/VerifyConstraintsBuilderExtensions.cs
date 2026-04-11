@@ -1,9 +1,9 @@
-﻿namespace Microsoft.Extensions.Logging.Mock
+﻿namespace Fluxera.Extensions.Logging.Mock
 {
 	using System;
 	using JetBrains.Annotations;
 
-    /// <summary>
+	/// <summary>
     ///		Extension methods for the <see cref="IVerifyConstraintsBuilder{T}"/> type.
     /// </summary>
     [PublicAPI]

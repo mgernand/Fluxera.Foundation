@@ -3,11 +3,11 @@ namespace SampleApp
 {
 	using System.Reflection;
 	using System.Threading.Tasks;
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Queries;
 	using Fluxera.Queries.AspNetCore;
 	using Fluxera.Repository;
 	using Fluxera.Repository.MongoDB;
-	using MadEyeMatt.MongoDB.DbContext;
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Hosting;

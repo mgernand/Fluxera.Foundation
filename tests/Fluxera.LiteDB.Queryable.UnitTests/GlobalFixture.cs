@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Queryable.UnitTests
+﻿namespace Fluxera.LiteDB.Queryable.UnitTests
 {
 	using System.Collections.Generic;
 	using System.IO;

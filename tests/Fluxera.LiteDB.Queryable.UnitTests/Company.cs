@@ -1,6 +1,7 @@
-﻿namespace LiteDB.Queryable.UnitTests
+﻿namespace Fluxera.LiteDB.Queryable.UnitTests
 {
 	using System.Collections.Generic;
+	using global::LiteDB;
 
 	public class Company
 	{

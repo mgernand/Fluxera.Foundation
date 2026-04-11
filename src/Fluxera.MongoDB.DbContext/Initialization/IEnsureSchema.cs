@@ -1,4 +1,4 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext.Initialization
+﻿namespace Fluxera.MongoDB.DbContext.Initialization
 {
 	using System.Threading.Tasks;
 	using JetBrains.Annotations;

@@ -1,7 +1,6 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext
+﻿namespace Fluxera.MongoDB.DbContext
 {
 	using JetBrains.Annotations;
-	using System;
 
 	/// <summary>
 	///     Provides the API for configuring <see cref="MongoDbContextOptions{TContext}" /> instances.

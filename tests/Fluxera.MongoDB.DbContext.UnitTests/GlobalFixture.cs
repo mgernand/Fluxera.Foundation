@@ -1,4 +1,4 @@
-﻿namespace MongoDB.DbContext.UnitTests
+﻿namespace Fluxera.MongoDB.DbContext.UnitTests
 {
 	using System;
 	using System.Threading.Tasks;

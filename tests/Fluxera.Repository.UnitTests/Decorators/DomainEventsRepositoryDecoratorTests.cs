@@ -4,13 +4,13 @@
 	using System.Threading.Tasks;
 	using Fluxera.DomainEvents;
 	using Fluxera.DomainEvents.Abstractions;
+	using Fluxera.Extensions.Logging.Mock;
 	using Fluxera.Repository.Decorators;
 	using Fluxera.Repository.DomainEvents;
 	using Fluxera.Repository.UnitTests.Core.PersonAggregate;
 	using Fluxera.Utilities.Extensions;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Logging;
-	using Microsoft.Extensions.Logging.Mock;
 	using Moq;
 	using NUnit.Framework;
 

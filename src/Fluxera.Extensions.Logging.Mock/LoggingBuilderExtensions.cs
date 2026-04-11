@@ -1,13 +1,14 @@
-﻿namespace Microsoft.Extensions.Logging.Mock
+﻿namespace Fluxera.Extensions.Logging.Mock
 {
 	using System;
 	using JetBrains.Annotations;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.DependencyInjection.Extensions;
+	using Microsoft.Extensions.Logging;
 	using Microsoft.Extensions.Logging.Configuration;
 	using Moq;
 
-    /// <summary>
+	/// <summary>
     ///		Extension methods for the <see cref="ILoggingBuilder"/> type.
     /// </summary>
     [PublicAPI]

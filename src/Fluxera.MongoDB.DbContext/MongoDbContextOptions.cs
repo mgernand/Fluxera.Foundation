@@ -1,7 +1,7 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext
+﻿namespace Fluxera.MongoDB.DbContext
 {
-	using JetBrains.Annotations;
 	using System;
+	using JetBrains.Annotations;
 
 	/// <summary>
 	///		The options used by a <see cref="MongoDbContext" />.

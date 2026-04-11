@@ -1,9 +1,9 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext.Serialization
+﻿namespace Fluxera.MongoDB.DbContext.Serialization
 {
 	using System;
+	using Fluxera.MongoDB.DbContext.Serialization.Serializers;
 	using global::MongoDB.Bson.Serialization;
 	using global::MongoDB.Bson.Serialization.Serializers;
-	using MadEyeMatt.MongoDB.DbContext.Serialization.Serializers;
 
 	/// <inheritdoc />
 	internal sealed class TimeOnlySerializationProvider : IBsonSerializationProvider

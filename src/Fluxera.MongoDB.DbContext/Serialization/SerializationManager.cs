@@ -1,9 +1,9 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext.Serialization
+﻿namespace Fluxera.MongoDB.DbContext.Serialization
 {
+	using Fluxera.MongoDB.DbContext.Serialization.Conventions;
 	using global::MongoDB.Bson;
 	using global::MongoDB.Bson.Serialization;
 	using global::MongoDB.Bson.Serialization.Conventions;
-	using MadEyeMatt.MongoDB.DbContext.Serialization.Conventions;
 
 	internal static class SerializationManager
 	{

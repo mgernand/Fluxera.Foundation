@@ -1,11 +1,12 @@
 ﻿// ReSharper disable ReplaceWithSingleCallToCount
 
-namespace LiteDB.Queryable.UnitTests.Issues
+namespace Fluxera.LiteDB.Queryable.UnitTests.Issues
 {
-	using NUnit.Framework;
-	using System.Linq;
 	using System;
+	using System.Linq;
 	using FluentAssertions;
+	using global::LiteDB;
+	using NUnit.Framework;
 
 	/// <summary>
 	///		See: https://github.com/mgernand/LiteDB.Queryable/issues/22 (Thanks @ismailbennani)

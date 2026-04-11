@@ -3,11 +3,11 @@
 	using System;
 	using System.Threading.Tasks;
 	using FluentAssertions;
+	using Fluxera.Extensions.Logging.Mock;
 	using Fluxera.Repository.Decorators;
 	using Fluxera.Repository.UnitTests.Core.PersonAggregate;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Logging;
-	using Microsoft.Extensions.Logging.Mock;
 	using Moq;
 	using NUnit.Framework;
 

@@ -1,9 +1,9 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext
+﻿namespace Fluxera.MongoDB.DbContext
 {
 	using System;
+	using Fluxera.MongoDB.DbContext.Initialization;
+	using Fluxera.MongoDB.DbContext.Serialization;
 	using JetBrains.Annotations;
-	using MadEyeMatt.MongoDB.DbContext.Initialization;
-	using MadEyeMatt.MongoDB.DbContext.Serialization;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.DependencyInjection.Extensions;
 

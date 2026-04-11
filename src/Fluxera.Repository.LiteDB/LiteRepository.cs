@@ -7,12 +7,12 @@
 	using System.Threading.Tasks;
 	using Fluxera.Entity;
 	using Fluxera.Guards;
+	using Fluxera.LiteDB.Queryable;
 	using Fluxera.Repository.Extensions;
 	using Fluxera.Repository.Options;
 	using Fluxera.Repository.Specifications;
 	using Fluxera.StronglyTypedId;
 	using global::LiteDB.Async;
-	using global::LiteDB.Queryable;
 
 	internal sealed class LiteRepository<TEntity, TKey> : LinqRepositoryBase<TEntity, TKey>
 		where TEntity : Entity<TEntity, TKey>

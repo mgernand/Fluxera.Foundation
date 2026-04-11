@@ -1,7 +1,5 @@
-﻿namespace MongoDB.DbContext.UnitTests
+﻿namespace Fluxera.MongoDB.DbContext.UnitTests
 {
-	using MadEyeMatt.MongoDB.DbContext;
-
 	public class SampleContextOne : MongoDbContext
 	{
 		public SampleContextOne(MongoDbContextOptions options)

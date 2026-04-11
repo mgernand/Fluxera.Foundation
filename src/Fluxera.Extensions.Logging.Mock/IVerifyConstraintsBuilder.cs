@@ -1,7 +1,8 @@
-﻿namespace Microsoft.Extensions.Logging.Mock
+﻿namespace Fluxera.Extensions.Logging.Mock
 {
 	using System;
 	using JetBrains.Annotations;
+	using Microsoft.Extensions.Logging;
 	using Moq;
 
 	/// <summary>

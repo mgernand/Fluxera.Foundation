@@ -1,4 +1,4 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext.Serialization.Conventions
+﻿namespace Fluxera.MongoDB.DbContext.Serialization.Conventions
 {
 	using System;
 	using global::MongoDB.Bson;

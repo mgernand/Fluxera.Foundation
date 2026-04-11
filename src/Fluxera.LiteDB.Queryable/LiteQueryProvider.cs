@@ -1,10 +1,11 @@
-﻿namespace LiteDB.Queryable
+﻿namespace Fluxera.LiteDB.Queryable
 {
 	using System.Linq;
 	using System.Linq.Expressions;
 	using System.Reflection;
 	using System.Threading;
-	using LiteDB.Async;
+	using global::LiteDB;
+	using global::LiteDB.Async;
 
 	internal sealed class LiteQueryProvider<T> : IAsyncQueryProvider
 	{

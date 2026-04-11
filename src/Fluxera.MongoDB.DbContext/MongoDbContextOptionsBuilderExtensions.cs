@@ -1,4 +1,4 @@
-﻿namespace MadEyeMatt.MongoDB.DbContext
+﻿namespace Fluxera.MongoDB.DbContext
 {
 	using JetBrains.Annotations;
 

@@ -6,13 +6,13 @@
 	using System.Threading;
 	using System.Threading.Tasks;
 	using Fluxera.Guards;
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Repository.DomainEvents;
 	using Fluxera.Repository.Options;
 	using Fluxera.Utilities;
 	using global::MongoDB.Driver;
 	using global::MongoDB.Driver.Core.Clusters;
 	using JetBrains.Annotations;
-	using MadEyeMatt.MongoDB.DbContext;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Logging;
 

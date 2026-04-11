@@ -3,8 +3,8 @@ namespace Extensions.Logging.Mock.UnitTests
 	using System;
 	using System.Collections.Generic;
 	using FluentAssertions;
+	using Fluxera.Extensions.Logging.Mock;
 	using Microsoft.Extensions.Logging;
-	using Microsoft.Extensions.Logging.Mock;
 	using Moq;
 	using NUnit.Framework;
 

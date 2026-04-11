@@ -1,11 +1,10 @@
-﻿namespace MongoDB.DbContext.UnitTests
+﻿namespace Fluxera.MongoDB.DbContext.UnitTests
 {
 	using System;
 	using System.Reflection;
 	using FluentAssertions;
-	using MadEyeMatt.MongoDB.DbContext;
+	using global::MongoDB.Driver;
 	using Microsoft.Extensions.DependencyInjection;
-	using MongoDB.Driver;
 	using NUnit.Framework;
 
 	[TestFixture]

@@ -1,5 +1,6 @@
 namespace Sample.API
 {
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Repository;
 	using Fluxera.Repository.EntityFrameworkCore;
 	using Fluxera.Repository.InMemory;
@@ -7,7 +8,6 @@ namespace Sample.API
 	using Fluxera.Repository.MongoDB;
 	using global::LiteDB;
 	using JetBrains.Annotations;
-	using MadEyeMatt.MongoDB.DbContext;
 	using Microsoft.Extensions.DependencyInjection;
 	using Sample.Domain.Company;
 	using Sample.Domain.Company.DomainEvents;

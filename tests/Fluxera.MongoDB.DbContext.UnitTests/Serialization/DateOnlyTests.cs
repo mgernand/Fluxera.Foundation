@@ -1,11 +1,11 @@
-namespace MongoDB.DbContext.UnitTests.Serialization
+namespace Fluxera.MongoDB.DbContext.UnitTests.Serialization
 {
 	using System;
 	using FluentAssertions;
-	using MadEyeMatt.MongoDB.DbContext.Serialization.Serializers;
-	using MongoDB.Bson;
-	using MongoDB.Bson.IO;
-	using MongoDB.Bson.Serialization;
+	using Fluxera.MongoDB.DbContext.Serialization.Serializers;
+	using global::MongoDB.Bson;
+	using global::MongoDB.Bson.IO;
+	using global::MongoDB.Bson.Serialization;
 	using NUnit.Framework;
 
 	[TestFixture]

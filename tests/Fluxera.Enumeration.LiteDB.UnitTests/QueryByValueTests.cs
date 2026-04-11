@@ -5,9 +5,9 @@
 	using System.Threading.Tasks;
 	using FluentAssertions;
 	using Fluxera.Enumeration.LiteDB.UnitTests.Model;
+	using Fluxera.LiteDB.Queryable;
 	using global::LiteDB;
 	using global::LiteDB.Async;
-	using global::LiteDB.Queryable;
 	using NUnit.Framework;
 
 	public class QueryByValueTests
