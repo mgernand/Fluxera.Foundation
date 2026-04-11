@@ -1,20 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<Nullable>disable</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Fluxera.StronglyTypedId.SystemTextJson" Version="9.2.0" />
-		<PackageReference Include="Mediator.SourceGenerator" Version="3.0.*-*">
+		<PackageReference Include="Mediator.SourceGenerator" Version="3.0.2">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Fluxera.StronglyTypedId.SystemTextJson\Fluxera.StronglyTypedId.SystemTextJson.csproj" />
 		<ProjectReference Include="..\Sample.EntityFrameworkCore\Sample.EntityFrameworkCore.csproj" />
 		<ProjectReference Include="..\Sample.InMemory\Sample.InMemory.csproj" />
 		<ProjectReference Include="..\Sample.LiteDB\Sample.LiteDB.csproj" />

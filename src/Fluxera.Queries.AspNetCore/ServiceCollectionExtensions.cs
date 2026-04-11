@@ -1,12 +1,9 @@
 ﻿namespace Fluxera.Queries.AspNetCore
 {
 	using Fluxera.Queries.AspNetCore.ModelBinding;
-	using Fluxera.Queries.AspNetCore.Swagger;
 	using JetBrains.Annotations;
 	using Microsoft.AspNetCore.Mvc;
 	using Microsoft.Extensions.DependencyInjection;
-	using Microsoft.Extensions.Options;
-	using Swashbuckle.AspNetCore.SwaggerGen;
 
 	/// <summary>
 	///		Extensions methods for the <see cref="IServiceCollection"/> type.
@@ -26,7 +23,7 @@
 				options.ModelBinderProviders.Insert(0, new DataQueryModelBinderProvider());
 			});
 
-			services.AddTransient<IPostConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerGenOptions>();
+			//services.AddTransient<IPostConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerGenOptions>();
 
 			return services;
 		}

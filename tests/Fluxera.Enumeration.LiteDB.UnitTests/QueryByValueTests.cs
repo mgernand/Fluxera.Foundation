@@ -30,7 +30,7 @@
 				RelationshipStatus = RelationshipStatus.Divorced
 			};
 
-			await collection.InsertAsync(person);
+			await this.collection.InsertAsync(person);
 		}
 
 		[OneTimeTearDown]

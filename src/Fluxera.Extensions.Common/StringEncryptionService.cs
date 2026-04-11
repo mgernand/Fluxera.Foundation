@@ -38,23 +38,21 @@
 			salt ??= this.options.DefaultSalt;
 
 			byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
-			using(Rfc2898DeriveBytes password = new Rfc2898DeriveBytes(passPhrase, salt, 1000, HashAlgorithmName.SHA256))
+			byte[] keyBytes = Rfc2898DeriveBytes.Pbkdf2(passPhrase, salt, 1000, HashAlgorithmName.SHA256, this.options.KeySize / 8);
+
+			using (Aes symmetricKey = Aes.Create())
 			{
-				byte[] keyBytes = password.GetBytes(this.options.KeySize / 8);
-				using(Aes symmetricKey = Aes.Create())
+				symmetricKey.Mode = CipherMode.CBC;
+				using (ICryptoTransform cryptoTransform = symmetricKey.CreateEncryptor(keyBytes, this.options.InitVectorBytes))
 				{
-					symmetricKey.Mode = CipherMode.CBC;
-					using(ICryptoTransform cryptoTransform = symmetricKey.CreateEncryptor(keyBytes, this.options.InitVectorBytes))
+					using (MemoryStream memoryStream = new MemoryStream())
 					{
-						using(MemoryStream memoryStream = new MemoryStream())
+						await using (CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoTransform, CryptoStreamMode.Write))
 						{
-							await using(CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoTransform, CryptoStreamMode.Write))
-							{
-								await cryptoStream.WriteAsync(plainTextBytes, 0, plainTextBytes.Length, cancellationToken);
-								await cryptoStream.FlushFinalBlockAsync(cancellationToken);
-								byte[] cipherTextBytes = memoryStream.ToArray();
-								return Convert.ToBase64String(cipherTextBytes);
-							}
+							await cryptoStream.WriteAsync(plainTextBytes, cancellationToken);
+							await cryptoStream.FlushFinalBlockAsync(cancellationToken);
+							byte[] cipherTextBytes = memoryStream.ToArray();
+							return Convert.ToBase64String(cipherTextBytes);
 						}
 					}
 				}
@@ -78,22 +76,20 @@
 			salt ??= this.options.DefaultSalt;
 
 			byte[] cipherTextBytes = Convert.FromBase64String(cipherText);
-			using(Rfc2898DeriveBytes password = new Rfc2898DeriveBytes(passPhrase, salt, 1000, HashAlgorithmName.SHA256))
+			byte[] keyBytes = Rfc2898DeriveBytes.Pbkdf2(passPhrase, salt, 1000, HashAlgorithmName.SHA256, this.options.KeySize / 8);
+
+			using (Aes symmetricKey = Aes.Create())
 			{
-				byte[] keyBytes = password.GetBytes(this.options.KeySize / 8);
-				using(Aes symmetricKey = Aes.Create())
+				symmetricKey.Mode = CipherMode.CBC;
+				using (ICryptoTransform cryptoTransform = symmetricKey.CreateDecryptor(keyBytes, this.options.InitVectorBytes))
 				{
-					symmetricKey.Mode = CipherMode.CBC;
-					using(ICryptoTransform cryptoTransform = symmetricKey.CreateDecryptor(keyBytes, this.options.InitVectorBytes))
+					using (MemoryStream memoryStream = new MemoryStream(cipherTextBytes))
 					{
-						using(MemoryStream memoryStream = new MemoryStream(cipherTextBytes))
+						await using (CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoTransform, CryptoStreamMode.Read))
 						{
-							await using(CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoTransform, CryptoStreamMode.Read))
-							{
-								byte[] plainTextBytes = new byte[cipherTextBytes.Length];
-								int decryptedByteCount = await cryptoStream.ReadAsync(plainTextBytes, 0, plainTextBytes.Length, cancellationToken);
-								return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
-							}
+							byte[] plainTextBytes = new byte[cipherTextBytes.Length];
+							int decryptedByteCount = await cryptoStream.ReadAsync(plainTextBytes, cancellationToken);
+							return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
 						}
 					}
 				}

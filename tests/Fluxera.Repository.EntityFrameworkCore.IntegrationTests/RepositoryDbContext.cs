@@ -49,7 +49,9 @@
 
 				optionsBuilder.ConfigureWarnings(builder =>
 				{
+#if NET9_0_OR_GREATER
 					builder.Ignore(RelationalEventId.PendingModelChangesWarning);
+#endif
 				});
 			}
 		}

@@ -1,17 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 		<IsPackable>false</IsPackable>
 		<IsTestProject>true</IsTestProject>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="FluentAssertions" Version="8.9.0" />
-		<PackageReference Include="Fluxera.Entity" Version="9.2.0" />
-		<PackageReference Include="Fluxera.Enumeration" Version="9.2.0" />
-		<PackageReference Include="Fluxera.StronglyTypedId" Version="9.2.0" />
-		<PackageReference Include="Fluxera.ValueObject" Version="9.2.0" />
 		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
 		<PackageReference Include="MadEyeMatt.AspNetCore.Endpoints" Version="9.0.1" />
 		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.4.0" />
@@ -28,17 +24,26 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="[8.0.18]" />
-		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="[8.0.18]" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="[8.0.25]" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="[8.0.25]" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.7" />
-		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="9.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="[9.0.14]" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version=" [9.0.14]" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Version="[10.0.5]" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version=" [10.0.5]" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\Fluxera.Queries.AspNetCore\Fluxera.Queries.AspNetCore.csproj" />
+	  <ProjectReference Include="..\..\src\Fluxera.Entity\Fluxera.Entity.csproj" />
+	  <ProjectReference Include="..\..\src\Fluxera.Enumeration\Fluxera.Enumeration.csproj" />
+	  <ProjectReference Include="..\..\src\Fluxera.Queries.AspNetCore\Fluxera.Queries.AspNetCore.csproj" />
+	  <ProjectReference Include="..\..\src\Fluxera.StronglyTypedId\Fluxera.StronglyTypedId.csproj" />
+	  <ProjectReference Include="..\..\src\Fluxera.ValueObject\Fluxera.ValueObject.csproj" />
 	</ItemGroup>
 
 </Project>

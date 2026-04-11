@@ -18,11 +18,12 @@
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <typeparam name="TOther"></typeparam>
+		/// <typeparam name="TValue"></typeparam>
 		/// <param name="queryOptions"></param>
 		/// <param name="expressionMapper"></param>
 		/// <returns></returns>
-		public static IQueryOptions<TOther> Convert<T, TOther>(this IQueryOptions<T> queryOptions,
-			Func<LambdaExpression, Expression<Func<TOther, object>>> expressionMapper)
+		public static IQueryOptions<TOther> Convert<T, TOther, TValue>(this IQueryOptions<T> queryOptions,
+			Func<LambdaExpression, Expression<Func<TOther, TValue>>> expressionMapper)
 			where T : class
 			where TOther : class
 		{

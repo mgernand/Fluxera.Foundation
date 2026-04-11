@@ -36,7 +36,6 @@
 			linqFilterResult.Should().NotBeNull();
 		}
 
-		[Ignore("Fix this later. Drop .NET 7 in November?")]
 		[Test]
 		public async Task ShouldFindByValueEquals()
 		{

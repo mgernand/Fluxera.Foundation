@@ -19,6 +19,15 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
+		<VersionPrefix>10.0.0</VersionPrefix>
+		<VersionSuffix></VersionSuffix>
+		<Version>$(VersionPrefix)$(VersionSuffix)</Version>
+		<AssemblyVersion>$(Version)</AssemblyVersion>
+		<AssemblyInformationalVersion>$(Version)</AssemblyInformationalVersion>
+		<FileVersion>$(Version)</FileVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup>
 		<Authors>Matthias Gernand</Authors>
 		<RepositoryUrl>https://github.com/mgernand/Fluxera.Foundation</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/mgernand/Fluxera.Foundation</PackageProjectUrl>

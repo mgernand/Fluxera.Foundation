@@ -47,7 +47,7 @@
 			int delayMilliseconds = numberOfSlotsAsInteger * millisecondsPerSlot;
 
 			// Apply jitter to the resulting time in order to increase entropy in your system
-			int delayMillisecondsWithJitter = jitterCalculator.Apply(delayMilliseconds, 20);
+			int delayMillisecondsWithJitter = this.jitterCalculator.Apply(delayMilliseconds, 20);
 
 			TimeSpan delay = TimeSpan.FromMilliseconds(delayMillisecondsWithJitter);
 			return delay;

@@ -1,5 +1,4 @@
-﻿#if NET7_0_OR_GREATER
-namespace Fluxera.Results.AspNetCore.UnitTests
+﻿namespace Fluxera.Results.AspNetCore.UnitTests
 {
 	using System.Net;
 	using System.Net.Http;
@@ -41,9 +40,7 @@ namespace Fluxera.Results.AspNetCore.UnitTests
 				.ConfigureServices(services =>
                 {
                     services.AddProblemDetailsActionResultTransformer();
-#if NET7_0_OR_GREATER
                     services.AddProblemDetailsHttpResultTransformer();
-#endif
 
 					services.AddLogging();
 					services.AddCors();
@@ -58,8 +55,8 @@ namespace Fluxera.Results.AspNetCore.UnitTests
 					app.UseEndpoints(builder =>
 					{
 						builder.MapControllers();
-#if NET7_0_OR_GREATER
-                        builder.MapGet("api/test/ok", (IHttpResultTransformer transformer) =>
+
+						builder.MapGet("api/test/ok", (IHttpResultTransformer transformer) =>
 						{
 							Result result = Result.Ok();
 							return result.ToHttpResult(transformer);
@@ -126,7 +123,6 @@ namespace Fluxera.Results.AspNetCore.UnitTests
 							Task<Result<int>> result = CreateResult();
 							return result.ToHttpResult(transformer);
 						});
-#endif
 					});
 				});
 
@@ -231,4 +227,3 @@ namespace Fluxera.Results.AspNetCore.UnitTests
 		}
 	}
 }
-#endif

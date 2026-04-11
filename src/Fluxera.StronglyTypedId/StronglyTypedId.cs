@@ -184,7 +184,7 @@
 		/// <inheritdoc />
 		public int CompareTo(TStronglyTypedId other)
 		{
-			return CompareTo((StronglyTypedId<TStronglyTypedId, TValue>)other);
+			return this.CompareTo((StronglyTypedId<TStronglyTypedId, TValue>)other);
 		}
 
 		/// <summary>

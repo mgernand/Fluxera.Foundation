@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net9.0</TargetFrameworks>
+		<TargetFrameworks>net10.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\src\Fluxera.Repository.InMemory\Fluxera.Repository.InMemory.csproj" />
+	  <ProjectReference Include="..\..\..\src\Fluxera.Repository.InMemory\Fluxera.Repository.InMemory.csproj" />
 	</ItemGroup>
 
 </Project>

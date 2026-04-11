@@ -32,7 +32,7 @@
 				Age = Age.Create(25),
 			};
 
-			await collection.InsertAsync(person);
+			await this.collection.InsertAsync(person);
 		}
 
 		[OneTimeTearDown]

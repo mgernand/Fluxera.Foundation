@@ -83,7 +83,7 @@
 		public void ShouldConvertQueryOptions_OnlySorting()
 		{
 			IQueryOptions<PersonDto> queryOptions = QueryOptionsBuilder.CreateFor<PersonDto>()
-				.OrderBy(x => x.Lastname)
+				.OrderBy(x => x.Firstname)
 				.ThenByDescending(x => x.Age)
 				.Build();
 

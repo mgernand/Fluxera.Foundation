@@ -22,9 +22,9 @@ namespace SampleApp
 
 			// Add services to the container.
 
-			builder.Services.AddMediatR(options =>
+			builder.Services.AddMediator(options =>
 			{
-				options.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+				options.Assemblies = [Assembly.GetExecutingAssembly()];
 			});
 
 			builder.Services.AddMongoDbContext<SampleMongoContext>();
