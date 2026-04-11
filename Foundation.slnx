@@ -46,6 +46,9 @@
     <Project Path="src/Fluxera.Extensions.Http/Fluxera.Extensions.Http.csproj" />
     <Project Path="src/Fluxera.Extensions.Localization.Abstractions/Fluxera.Extensions.Localization.Abstractions.csproj" />
     <Project Path="src/Fluxera.Extensions.Localization/Fluxera.Extensions.Localization.csproj" />
+    <Project Path="src/Fluxera.Extensions.Logging.Mock/Fluxera.Extensions.Logging.Mock.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
     <Project Path="src/Fluxera.Extensions.Validation.Abstractions/Fluxera.Extensions.Validation.Abstractions.csproj" />
     <Project Path="src/Fluxera.Extensions.Validation/Fluxera.Extensions.Validation.csproj" />
   </Folder>
@@ -115,6 +118,9 @@
     <Project Path="tests/Fluxera.Extensions.DependencyInjection.UnitTests/Fluxera.Extensions.DependencyInjection.UnitTests.csproj" />
     <Project Path="tests/Fluxera.Extensions.Http.UnitTests/Fluxera.Extensions.Http.UnitTests.csproj" />
     <Project Path="tests/Fluxera.Extensions.Localization.UnitTests/Fluxera.Extensions.Localization.UnitTests.csproj" />
+    <Project Path="tests/Fluxera.Extensions.Logging.Mock.UnitTests/Extensions.Logging.Mock.UnitTests.csproj">
+      <Build Solution="Debug|*" Project="false" />
+    </Project>
     <Project Path="tests/Fluxera.Extensions.Validation.UnitTests/Fluxera.Extensions.Validation.UnitTests.csproj" />
   </Folder>
   <Folder Name="/tests/Queries/">
