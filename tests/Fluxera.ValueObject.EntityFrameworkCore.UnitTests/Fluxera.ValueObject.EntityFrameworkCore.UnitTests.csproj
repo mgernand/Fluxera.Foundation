@@ -20,11 +20,22 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.7" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="[8.0.25]" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="[9.0.14]" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="[10.0.5]" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\Fluxera.ValueObject.EntityFrameworkCore\Fluxera.ValueObject.EntityFrameworkCore.csproj" />
+		<ProjectReference Include="..\..\src\Fluxera.ValueObject.EntityFrameworkCore\Fluxera.ValueObject.EntityFrameworkCore.csproj" />
 	</ItemGroup>
 
 </Project>
