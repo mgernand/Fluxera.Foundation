@@ -4,10 +4,10 @@
 	using System.Linq;
 	using System.Threading.Tasks;
 	using FluentAssertions;
+	using Fluxera.LiteDB.Queryable;
 	using Fluxera.ValueObject.LiteDB.UnitTests.Model;
 	using global::LiteDB;
 	using global::LiteDB.Async;
-	using global::LiteDB.Queryable;
 	using NUnit.Framework;
 
 	[TestFixture]

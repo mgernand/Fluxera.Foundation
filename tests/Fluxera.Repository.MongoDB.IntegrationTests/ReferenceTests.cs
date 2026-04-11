@@ -2,9 +2,9 @@
 {
 	using System;
 	using System.Threading.Tasks;
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Repository.UnitTests.Core;
 	using global::MongoDB.Driver;
-	using MadEyeMatt.MongoDB.DbContext;
 	using NUnit.Framework;
 
 	[TestFixture(true)]

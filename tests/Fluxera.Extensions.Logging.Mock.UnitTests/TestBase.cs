@@ -1,10 +1,10 @@
 ﻿namespace Extensions.Logging.Mock.UnitTests
 {
 	using System;
+	using Fluxera.Extensions.Logging.Mock;
 	using JetBrains.Annotations;
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Logging;
-	using Microsoft.Extensions.Logging.Mock;
 	using Moq;
 	using NUnit.Framework;
 

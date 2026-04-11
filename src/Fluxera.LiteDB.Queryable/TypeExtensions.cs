@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Queryable
+﻿namespace Fluxera.LiteDB.Queryable
 {
 	using System;
 	using System.Collections.Generic;

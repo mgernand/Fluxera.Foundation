@@ -1,9 +1,9 @@
 ﻿namespace Fluxera.Repository.MongoDB
 {
 	using Fluxera.Guards;
+	using Fluxera.MongoDB.DbContext;
 	using JetBrains.Annotations;
 	using System;
-	using MadEyeMatt.MongoDB.DbContext;
 
 	/// <summary>
 	///     Provides the options for the MongoDB repository implementation.

@@ -5,13 +5,14 @@
 #pragma warning disable CS1574
 #pragma warning disable CS0419
 #pragma warning disable CS1580
-namespace LiteDB.Queryable
+namespace Fluxera.LiteDB.Queryable
 {
 	using System;
 	using System.Collections.Generic;
+	using System.Linq;
 	using System.Linq.Expressions;
 	using System.Reflection;
-	using System.Linq;
+	using System.Runtime.InteropServices.JavaScript;
 
 	/// <summary>
 	///     A class that provides reflection metadata for translatable LINQ methods.
@@ -24,12 +25,12 @@ namespace LiteDB.Queryable
 		public static MethodInfo All { get; }
 
 		/// <summary>
-		///     The <see cref="MethodInfo" /> for <see cref="Queryable.Any" />
+		///     The <see cref="MethodInfo" /> for <see cref="JSType.Any" />
 		/// </summary>
 		public static MethodInfo AnyWithoutPredicate { get; }
 
 		/// <summary>
-		///     The <see cref="MethodInfo" /> for <see cref="Queryable.Any" />
+		///     The <see cref="MethodInfo" /> for <see cref="JSType.Any" />
 		/// </summary>
 		public static MethodInfo AnyWithPredicate { get; }
 

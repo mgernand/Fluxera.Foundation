@@ -23,9 +23,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\Fluxera.Extensions.Logging.Mock\Fluxera.Extensions.Logging.Mock.csproj" />
-	  <ProjectReference Include="..\..\src\Fluxera.Repository.InMemory\Fluxera.Repository.InMemory.csproj" />
-	  <ProjectReference Include="..\Fluxera.Repository.UnitTests.Core\Fluxera.Repository.UnitTests.Core.csproj" />
+		<ProjectReference Include="..\..\src\Fluxera.Extensions.Logging.Mock\Fluxera.Extensions.Logging.Mock.csproj" />
+		<ProjectReference Include="..\..\src\Fluxera.Repository.InMemory\Fluxera.Repository.InMemory.csproj" />
+		<ProjectReference Include="..\Fluxera.Repository.UnitTests.Core\Fluxera.Repository.UnitTests.Core.csproj" />
 	</ItemGroup>
 
 </Project>

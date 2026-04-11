@@ -1,9 +1,10 @@
-﻿namespace Microsoft.Extensions.Logging.Mock
+﻿namespace Fluxera.Extensions.Logging.Mock
 {
 	using JetBrains.Annotations;
+	using Microsoft.Extensions.Logging;
 	using Moq;
 
-    /// <summary>
+	/// <summary>
     ///		Extension methods for the <see cref="Mock{T}"/> type.
     /// </summary>
     [PublicAPI]

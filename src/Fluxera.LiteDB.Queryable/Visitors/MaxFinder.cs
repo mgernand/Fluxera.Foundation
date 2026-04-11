@@ -1,4 +1,4 @@
-﻿namespace LiteDB.Queryable.Visitors
+﻿namespace Fluxera.LiteDB.Queryable.Visitors
 {
 	using System.Linq.Expressions;
 

@@ -1,8 +1,8 @@
 ﻿namespace Fluxera.Repository.MongoDB.IntegrationTests
 {
+	using Fluxera.MongoDB.DbContext;
 	using Fluxera.Repository.UnitTests.Core;
 	using Fluxera.Utilities.Extensions;
-	using MadEyeMatt.MongoDB.DbContext;
 
 	public sealed class RepositoryMultiTenantMongoDbContext : MongoDbContext
 	{

@@ -1,10 +1,11 @@
-﻿namespace LiteDB.Queryable
+﻿namespace Fluxera.LiteDB.Queryable
 {
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Threading.Tasks;
+	using global::LiteDB;
+	using global::LiteDB.Async;
 	using JetBrains.Annotations;
-	using LiteDB.Async;
 
 	/// <summary>
 	///     Extension methods to create <see cref="IQueryable{T}" /> instances from LiteDB collections.
