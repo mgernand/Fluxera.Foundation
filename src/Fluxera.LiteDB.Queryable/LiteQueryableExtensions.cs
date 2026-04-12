@@ -2,6 +2,8 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 // From: https://github.com/dotnet/efcore/blob/main/src/EFCore/Extensions/EntityFrameworkQueryableExtensions.cs
 
+extern alias SystemLinqAsyncLibrary;
+
 namespace Fluxera.LiteDB.Queryable
 {
 	using System;

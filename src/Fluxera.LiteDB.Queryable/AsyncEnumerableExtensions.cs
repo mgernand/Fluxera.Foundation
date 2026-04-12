@@ -1,7 +1,9 @@
-﻿namespace Fluxera.LiteDB.Queryable
+﻿extern alias SystemLinqAsyncLibrary;
+
+namespace Fluxera.LiteDB.Queryable
 {
 	using System.Collections.Generic;
-	using System.Linq;
+	using AsyncEnumerable = SystemLinqAsyncLibrary::System.Linq.AsyncEnumerable;
 
 	internal static class AsyncEnumerableExtensions
 	{
