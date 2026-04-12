@@ -12,7 +12,6 @@ namespace Fluxera.LiteDB.Queryable
 	using System.Linq;
 	using System.Linq.Expressions;
 	using System.Reflection;
-	using System.Runtime.InteropServices.JavaScript;
 
 	/// <summary>
 	///     A class that provides reflection metadata for translatable LINQ methods.
@@ -25,12 +24,12 @@ namespace Fluxera.LiteDB.Queryable
 		public static MethodInfo All { get; }
 
 		/// <summary>
-		///     The <see cref="MethodInfo" /> for <see cref="JSType.Any" />
+		///     The <see cref="MethodInfo" /> for <see cref="Queryable.Any" />
 		/// </summary>
 		public static MethodInfo AnyWithoutPredicate { get; }
 
 		/// <summary>
-		///     The <see cref="MethodInfo" /> for <see cref="JSType.Any" />
+		///     The <see cref="MethodInfo" /> for <see cref="Queryable.Any" />
 		/// </summary>
 		public static MethodInfo AnyWithPredicate { get; }
 

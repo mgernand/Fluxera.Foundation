@@ -1,6 +1,8 @@
 ﻿// ReSharper disable StaticMemberInGenericType
 // ReSharper disable ReplaceWithSingleCallToSingle
 
+extern alias SystemLinqAsyncLibrary;
+
 namespace Fluxera.LiteDB.Queryable
 {
 	using System;
@@ -13,6 +15,7 @@ namespace Fluxera.LiteDB.Queryable
 	using Fluxera.LiteDB.Queryable.Visitors;
 	using global::LiteDB;
 	using global::LiteDB.Async;
+	using AsyncEnumerable = SystemLinqAsyncLibrary::System.Linq.AsyncEnumerable;
 
 	internal sealed class LiteQueryBuilder<T>
 	{
