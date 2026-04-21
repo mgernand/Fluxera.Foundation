@@ -27,7 +27,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2025.2.4" PrivateAssets="All" />
-		<PackageReference Include="MongoDB.Driver" Version="3.7.1" />
+		<PackageReference Include="MongoDB.Driver" Version="3.8.0" />
 	</ItemGroup>
 
 	<ItemGroup>
