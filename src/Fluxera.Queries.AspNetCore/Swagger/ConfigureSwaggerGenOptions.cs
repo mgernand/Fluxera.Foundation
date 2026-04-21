@@ -23,16 +23,16 @@
 		{
 			options.CustomSchemaIds(this.SchemaIdSelector);
 
-			options.OperationFilter<QueryOptionsOperationFilter>();
-			options.OperationFilter<MetadataCleanupFilter>();
+			//options.OperationFilter<QueryOptionsOperationFilter>();
+			//options.OperationFilter<MetadataCleanupFilter>();
 
-			options.DocumentFilter<ReferenceCorrectionDocumentFilter>();
-			options.DocumentFilter<MetadataCleanupFilter>();
+			//options.DocumentFilter<ReferenceCorrectionDocumentFilter>();
+			//options.DocumentFilter<MetadataCleanupFilter>();
 
-			options.SchemaFilter<MetadataEnrichmentSchemaFilter>();
-			options.SchemaFilter<EnumSchemaFilter>();
-			options.SchemaFilter<EnumerationSchemaFilter>();
-			options.SchemaFilter<IgnorePropertiesSchemaFilter>();
+			//options.SchemaFilter<MetadataEnrichmentSchemaFilter>();
+			//options.SchemaFilter<EnumSchemaFilter>();
+			//options.SchemaFilter<EnumerationSchemaFilter>();
+			//options.SchemaFilter<IgnorePropertiesSchemaFilter>();
 		}
 
 		private string SchemaIdSelector(Type modelType)
